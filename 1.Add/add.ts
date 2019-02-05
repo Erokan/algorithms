@@ -9,8 +9,20 @@ console.log(sum)
 
 function add2 (...param : number[]):number {
     console.log(param)
-
-    return 10;
+    let total = 0;
+    for (var i = 0; i < param.length; i++){
+        total += param[i];
+    }
+    return total;
 }
 
-console.log(add2(10,20,30,40))
+function add3 (... param : number[]): number {
+    let total = 0;
+    param.forEach((num) => {
+        total += num;
+    });
+    return total;
+}
+
+console.log(add2(10,20,30,40,50))
+console.log(add3(10,20))
