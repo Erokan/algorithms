@@ -1,5 +1,5 @@
-function absoluteValuesSumMinimization(param : number[]):number {
-    console.log(param.length
+function absoluteValuesSumMinimization( param : number[]) : number {
+    console.log(param.length)
     if (param.length % 2 === 0) {
         return (param[param.length/2-1]);
     } else 
